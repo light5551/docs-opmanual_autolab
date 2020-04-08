@@ -35,12 +35,12 @@ Then, cd into your `duckietown-world` repository (it should be in the `src` fold
 
 
     laptop $ cd ~/dt-env-developer/src/duckietown-world
-    laptop $ python3 -m venv duckietown-world-venv
+    laptop $ python3.7 -m venv duckietown-world-venv
     laptop $ source duckietown-world-venv/bin/activate
 
 Warning: if you create the venv as suggested inside duckietown-world, be very careful not to add it to your git commits.
 
-To verify the version of python running inside the virtual environment run:
+To verify the version of Python running inside the virtual environment run:
 
     laptop $ python --version
 
