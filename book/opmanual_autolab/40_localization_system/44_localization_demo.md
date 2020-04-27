@@ -22,7 +22,7 @@ The localization pipeline needs a __master__ computer that will receive all info
 
 If this container is stopped at some point, then all the acquisition bridges (see below) need to be restarted, as they need connection to this rosmaster.
 
-## Setting visualization (optionnal)
+## Setting visualization (optional)
 
 To set up an rviz visualization, run first :
 
@@ -124,7 +124,7 @@ Remember from [](#autolab-map-making) that you created a map. Now is the time to
 
 To run localization, execute:
 
-    laptop $ docker run --rm  -e  ATMSGS_BAG=/data/processed_![BAG_NAME.BAG] -e OUTPUT_DIR=/data  ROS_MASTER=![YOUR_HOSTNAME] -e ROS_MASTER_IP=![YOUR_IP] --name graph_optimizer -v ![PATH_TO_BAG_FOLDER]:/data -e DUCKIETOWN_WORLD_FORK=![YOUR_FORK_NAME] -e MAP_NAME=![YOUR_MAP_NAME] duckietown/cslam-graphoptimizer:daffy-amd64
+    laptop $ docker run --rm  -e  ATMSGS_BAG=/data/processed_![BAG_NAME.BAG] -e OUTPUT_DIR=/data -e ROS_MASTER=![YOUR_HOSTNAME] -e ROS_MASTER_IP=![YOUR_IP] --name graph_optimizer -v ![PATH_TO_BAG_FOLDER]:/data -e DUCKIETOWN_WORLD_FORK=![YOUR_FORK_NAME] -e MAP_NAME=![YOUR_MAP_NAME] duckietown/cslam-graphoptimizer:daffy-amd64
 
 The poses can then be visualized in Rviz as the optimization advance.
 
@@ -168,8 +168,8 @@ The `PATH_TO_RESULT_FOLDER` folder is the one where the results will be saved in
 
 ## Visualize the trajectories
 
-After the localization is done (either offline or online), you can visualize the trajectory
-of each Autobot superimposed to your map using a jupyter notebook in the duckietown-world repository.
+After the localization is done (either offline or online), you can visualize the trajectory of
+each Autobot superimposed to your map using a jupyter notebook in the duckietown-world repository.
 Similarly to [](#autolab-map-making), launch `jupiter notebook` and open your browser.
 Navigate to `notebooks` and open the notebook `65-Localization-ShowTrajectory`.
 Change the values in the first block of this notebook to reflect the name of your map,

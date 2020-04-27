@@ -23,7 +23,7 @@ We recommend that you create a virtual environment for duckietown-world.
 
 Here is one possible method, but you can use whichever you prefer.
 
-Note: duckietown-world currently needs python3.6 or higher.
+Note: duckietown-world currently needs python3.7 or higher.
 
 First, install venv:
 
@@ -35,10 +35,16 @@ Then, cd into your `duckietown-world` repository (it should be in the `src` fold
 
 
     laptop $ cd ~/dt-env-developer/src/duckietown-world
-    laptop $ python3.6 -m venv duckietown-world-venv
+    laptop $ python3.7 -m venv duckietown-world-venv
     laptop $ source duckietown-world-venv/bin/activate
 
 Warning: if you create the venv as suggested inside duckietown-world, be very careful not to add it to your git commits.
+
+To verify the version of Python running inside the virtual environment run:
+
+    laptop $ python --version
+
+This should be 3.7.x or higher.
 
 Note: to get out of the virtual environment, just run `deactivate`
 
@@ -51,6 +57,9 @@ Now, you can setup duckietown-world. Inside of the virtual environment (you shou
     laptop $ python3 -m pip install jupyter
     laptop $ python3 setup.py develop --no-deps
 
+Note: in case the last command returns the error 'Permission denied: 'src/duckietown_world_daffy.egg-info/PKG-INFO ', then go to the folder ```src/duckietown_world_daffy.egg-info``` and change permission for the folder itself as well as all the files within the folder using ```sudo chmod 777```. After doing this, run again:
+
+    laptop $ python3 setup.py develop --no-deps
 
 ## Using duckietown-world to create your map
 
@@ -95,4 +104,3 @@ Now that the map is ready, you can commit :
 Note: You may note have the rights to push to the duckietown repository. Instead, create a fork of the repository and remember the user account you use, as it will be useful later on. Also remember the name you gave to the map.
 
 Warning: again, please do not commit any virtual environment.
-
