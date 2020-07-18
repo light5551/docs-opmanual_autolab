@@ -63,7 +63,7 @@ To do so put the pin headers into the big hole and fix it with the screws.
 
 The best way to figure out how to do this is to always take the sensor and turn it until you can read what is written on it and that will be our basic position.
 
-Plugins on the raspberry-pi: 
+Plugins on the raspberry-pi:
 
 o o 1 o o
 
@@ -110,11 +110,15 @@ You can check the calibration by going to the calibration folder, TODO
 
 To run the sensor container first you need to pull the image:
 
-‘docker -H HOSTNAME.local pull gian1717/sensor:p2’
+```
+$ docker -H HOSTNAME.local pull gian1717/sensor:p2
+```
 
 And then start the container:
 
-‘docker -H HOSTNAME.local run -it  --net host --privileged --name light-sensor -v /data:/data gian1717/sensor:p2’
+```
+$ docker -H HOSTNAME.local run -it  --net host --privileged --name light-sensor -v /data:/data gian1717/sensor:p2
+```
 
 If you want to know more:
 

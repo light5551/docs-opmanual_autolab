@@ -34,7 +34,10 @@ For **online acquisition**, three strategies can be used:
 * Each agent directly sends the images and the central ROS master does the processing for every agent (this implies having a (or many) good computer)
 * A mix of the two is also possible (the Autobots send their images, the Watchtowers process them)
 
+
+<div markdown="1" class="draft">
 As explained in [](#localization-demo), in both cases the Watchtowers and Autobots use the [acquisition bridge](#acquisition-bridge) to send their image streams to a central computer. The Watchtowers only send images when movements are detected, to reduce the number of images to process and record.
+</div>
 
 For offline acquisition, all we need to do is record a rosbag on this computer.
 
