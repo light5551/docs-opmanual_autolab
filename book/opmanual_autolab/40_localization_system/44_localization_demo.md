@@ -16,7 +16,7 @@ Next Steps: Contribute to [localization software](#autolab-localization-software
 
 ## Setting up your master computer
 
-The localization pipeline needs a __master__ computer that will receive all information and process it. In order for everything to work, you need a kinetic roscore running at all times, and it needs to be run first.
+The localization pipeline needs a __master__ computer that will receive all information and process it. In order for everything to work, you need a **noetic** roscore running at all times, and it needs to be run first.
 
     laptop $ docker run --name roscore --rm --net=host -dit duckietown/dt-ros-commons:daffy-amd64 roscore
 
@@ -49,7 +49,7 @@ The watchtowers need a slightly modified version of the duckiebot interface.
 
 First, remove the duckiebot interface that is running:
 
-    laptop $ docker -H ![hostname].local rm -f dt18_03_roscore_duckiebot-interface_1
+    laptop $ docker -H ![hostname].local rm -f duckiebot-interface
 
 Then, pull the custom image
 
@@ -65,7 +65,7 @@ In order to get the images from all watchtowers to the same rosmaster (your comp
 
 To run this, please run on all watchtowers:
 
-    laptop $ docker -H ![hostname].local run --name acquisition-bridge --network=host -e ROBOT_TYPE=watchtower -e LAB_ROS_MASTER_IP=![YOUR_ROS_MASTER_IP] -dit duckietown/acquisition-bridge:daffy-arm32v7
+    laptop $ docker -H ![hostname].local run --name acquisition-bridge --network=host -e ROBOT_TYPE=watchtower -e LAB_ROS_MASTER_IP=![YOUR_ROS_MASTER_IP] -v /data:/data --privileged -dit courchesnea/acquisition-bridge:daffy-arm32v7
 
 ### Advice
 
@@ -95,12 +95,11 @@ Then run rqt_image_view from there.
 
 ## Offline localization
 
-The offline localization is offline in the meaning that you only get a trajectory of your duckiebots after the experiment is over.
-The process is the following:
+The offline localization is offline in the meaning that you only get a trajectory of your duckiebots after the experiment is over. The process is the following:
 
 - You record an experiment
-- You process the bag you get to extract apriltag poses and odometry
-- You run the graph optimizer on this intermediary result and it gives you the trajectory of all duckiebots in yaml files.
+- You process the bag you get to extract apriltag poses
+- You run the graph optimizer on this intermediary result and it gives you the trajectory of all duckiebots in `yaml` files.
 
 ### Recording the experiment
 
@@ -110,7 +109,7 @@ When you are ready to start an experiment, on your master PC, run rosbag:
 
 and stop it at the end of the experiment.
 
-### Processing the apriltags and odometry from the bag
+### Processing the apriltags from the resulting bag
 
 First, you need to know where your bag is. The folder containing it is referred as `PATH_TO_BAG_FOLDER` in the following. We recommend you create new separate folders for each experiment (with date and/or sequence number).
 
@@ -131,7 +130,6 @@ The poses can then be visualized in Rviz as the optimization advance.
 The trajectories will be stored in the folder `PATH_TO_BAG_FOLDER`.
 
 
-
 ## Online Localization
 
 Note: This is highly experimental, as up until now the processing power required to run localization online is really heavy. The goal of the current development is to make the process affordable for a single computer
@@ -148,12 +146,6 @@ For each Watchtower that is running do on your computer :
     laptop $ docker run --name apriltag_processor_![WATCHTOWER_NUMBER] --network=host -dit --rm  -e ROS_MASTER_URI=http://![YOUR_IP]:11311 -e ACQ_DEVICE_NAME=![WATCHTOWER_NAME] duckietown/apriltag-processor:daffy-amd64
 
 Where `WATCHTOWER_NUMBER` is just 01 to XX and `WATCHTOWER_NAME` is the hostname of the Watchtower (usually it is `watchtowerXX`).
-
-For each Autobot that is running do on your computer :
-
-    laptop $ docker run --name odometry_processor_![AUTOBOT_NUMBER] --network=host -dit --rm  -e ACQ_ROS_MASTER_URI_SERVER_IP=![YOUR_IP] -e ACQ_DEVICE_NAME=![AUTOBOT_NAME] duckietown/wheel-odometry-processor:daffy-amd64
-
-Where `AUTOBOT_NUMBER` is just 01 to XX and `AUTOBOT_NAME` is the hostname of the Autobot (usually it is `autobotXX`).
 
 Warning: The processing of apriltags is very heavy. Putting more than 4 processors on a computer is very risky. What you can do is use other computers that are on the same network. Launch exactly the same command and be sure to leave the IP of the designated master computer.
 

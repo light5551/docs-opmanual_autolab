@@ -15,12 +15,10 @@ This section teaches you how to prepare your Watchtower system. This includes ha
 
 
 ### SD card initialization {#wt-sd-card-init}
-For Watchtowers and traffic lights we use naming conventions. Have a look at [traffic light naming conventions](+opmanual_duckietown#dt-ops-tl-prep) or [Watchtower naming conventions](#watchtower-initialization) for information.
-To flash your SD card with the conventions mentioned in the links before, use [these instructions](+opmanual_duckiebot#setup-duckiebot).
+For Watchtowers and traffic lights we use naming conventions. Have a look at [traffic light naming conventions](+opmanual_duckietown#dt-ops-tl-prep) or [Watchtower naming conventions](#watchtower-initialization) for information. To flash your SD card with the conventions mentioned in the links before, use [these instructions](+opmanual_duckiebot#setup-duckiebot).
 
 
 ### Sections
-
 
 * [](#watchtower-hardware-assembly-WT19-B): This version is still under development.
 * [](#watchtower-hardware-assembly-WT19-A): This is the currently shipped and used version for Duckietowns and Autolabs around the world.

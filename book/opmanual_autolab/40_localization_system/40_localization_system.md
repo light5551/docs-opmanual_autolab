@@ -14,17 +14,17 @@ The localization system is an important part of the Autolab, as it gives the pos
 
 Note: Watchtowers are an experimental feature of Duckietown, which are currently only used in Autolabs.
 
-### Sections
+### Sections {nonumber notoc}
 
 <minitoc/>
 
-### Overview and Concept of the system
+### Overview and Concept of the system {nonumber notoc}
 
 The localization system serves multiple purposes:
 
 * Automating the Autolab completely:
-  * It allows the central system to discover if a Autobot moves out of the track
-  * It allows more high level fleet control
+  * allowing the central system to discover if a Autobot moves out of the track, and
+  * allowing more high level fleet control.
 * It allows the grading of the embodied challenges for AIDO
 
 The localization system mainly relies on AprilTags, which are a conceptually and visually similar to QR codes. Each Autobot is provided with a mounting plate with an AprilTag on top. By tracking these mounted AprilTags, the system evaluates the Autobot poses by solving an optimization problem.
@@ -33,7 +33,7 @@ To track the AprilTags, we use Watchtowers. In the spirit of Duckietown, a Watch
 
 Apart from AprilTags on Autobots, there are other AprilTags that are on the ground, called Ground AprilTags. The precise location for each Ground AprilTag is known in advance. We build a pose graph of all the relative poses bewteen Watchtowers and Autobots, and what they see. By running optimization on the graph, we merge the local influx of data from all agents into a global position graph of all agents, using the Ground AprilTags as global fixed references.
 
-### BUILDING - Hardware
+### BUILDING - Hardware {nonumber notoc}
 
 There are two structural elements required to have a working system:
 
@@ -44,7 +44,7 @@ The localization system is designed such that Watchtowers don't need to be at a 
 
 Moreover, the ground AprilTags need to follow conventions specified in the chapter [](#localization-apriltags-specs).
 
-### DEMOS - Running Localization
+### DEMOS - Running Localization {nonumber notoc}
 
 Localization can be run either online or offline.
 
@@ -54,6 +54,6 @@ Running localization _offline_ means that the data recorded but processed only _
 
 While the long term objective is to only do online localization, the offline localization has proved very useful for AIDO, because it requires less computing power and does not have the network bandwidth as a bottleneck.
 
-### SOFTWARE - Description
+### SOFTWARE - Description {nonumber notoc}
 
 The software is explained in detailed in chapter [](#autolab-localization-software)

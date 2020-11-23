@@ -16,28 +16,23 @@ Results: A ready watchtower
 Next Steps: [Place the Watchtower in the city](#localization-watchtower-placement).
 </div>
 
+
 ## Flashing the SD card
 
-The image setup procedure for Watchtowers is the same as for Duckiebots.
+The image setup procedure for Watchtowers is the same as for Duckiebots. In the Autolab, you should use the naming convention:
 
-In the Autolab of ETH Zurich, we use the naming convention:
+* hostname: **watchtowerXX** (where XX specify the number of the Watchtower)
 
-* linux-username:  **mom**
-* hostname **watchtowerXX** (where XX specify the number of the Watchtower)
-* password **MomWatches**.
+Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` version of the shell.
 
-Note: **Important** : please add `--type watchtower` to the flashing procedure
-
-Note: **Important** : please make sure you have set your dts to version `daffy` using the command `dts set-version --daffy`.
-
-Note: **For RaspberryPi 4**, add `--experimental` to the command
-
+Note: Please add `--type watchtower` to the flashing procedure
 
 A complete command will look like:
 
-    laptop $ dts init_sd_card --hostname watchtower![XX] --linux-username mom --linux-password MomWatches --country ![COUNTRY] --type watchtower --experimental
+    laptop $ dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type watchtower
 
 Using the above naming conventions, you can flash your SD cards as is described in [Duckiebot Initialization](+opmanual_duckiebot#setup-duckiebot).
+
 
 ## Calibrating the camera
 

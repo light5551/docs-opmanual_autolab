@@ -1,6 +1,6 @@
-# Autolab map {#autolab-map-making status=ready}
+# The Autolab map {#autolab-map-making status=ready}
 
-Excerpt: Creating and managing the map of your Autolab.
+Excerpt: Creating and managing the map of your Autolab. In the following chapters of the book, there are many uses to a software defined map of your Autolab. It is for instance required for a working localization pipeline.
 
 <div class='requirements' markdown="1">
 
@@ -8,12 +8,9 @@ Requires: The city layout is fixed and ready.
 
 Results: The city layout is transcribed in duckietown-world, to be used for visualization tools, for localization and much more.
 
-Next Steps: todo
 </div>
 
-In the following chapters of the book, there are many uses to a software defined map of your Autolab. It is for instance required for a working localization pipeline.
 
-Warning: this part is in chapter B for structural design of the documentation. However, in [](#autolab-auto-charging) you will probably modify the layout of your city. We strongly recommend to do it first then come back here once the map is fixed (to avoid having to do it again).
 
 ## Setting up duckietown-world
 
@@ -57,7 +54,7 @@ Now, you can setup duckietown-world. Inside of the virtual environment (you shou
     laptop $ python3 -m pip install jupyter
     laptop $ python3 setup.py develop --no-deps
 
-Note: in case the last command returns the error 'Permission denied: 'src/duckietown_world_daffy.egg-info/PKG-INFO ', then go to the folder ```src/duckietown_world_daffy.egg-info``` and change permission for the folder itself as well as all the files within the folder using ```sudo chmod 777```. After doing this, run again:
+Note: in case the last command returns the error 'Permission denied: ```src/duckietown_world_daffy.egg-info/PKG-INFO``` ', then go to the following folder ```src/duckietown_world_daffy.egg-info``` and change permission for the folder itself as well as all the files within the folder using ```sudo chmod 777```. After doing this, run again:
 
     laptop $ python3 setup.py develop --no-deps
 
@@ -96,11 +93,11 @@ If you now go back to the notebook and run the line that lists all maps, you sho
 
 ## Committing
 
+Warning: again, please do not commit any virtual environment!
+
 Now that the map is ready, you can commit :
 
 * the map in `duckietown-world/src/duckietown_world/data/gd1/maps`
 * the generated folder is `visualization/maps/`
 
 Note: You may note have the rights to push to the duckietown repository. Instead, create a fork of the repository and remember the user account you use, as it will be useful later on. Also remember the name you gave to the map.
-
-Warning: again, please do not commit any virtual environment.

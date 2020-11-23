@@ -1,4 +1,4 @@
-# Autobot hardware compliance checks {#autolab-autobot-hw-checks status=ready}
+# Autobot hardware checks {#autolab-autobot-hw-checks status=ready}
 
 Excerpt: run a compliance test and store the information at the right place
 
@@ -8,7 +8,7 @@ We have put together a step-by-step instruction to ensure that every Autobot tha
 
 Requires: a assembled [Autobot](#autolab-autobot-specs)
 
-Results: a Autobot which is ready to be used in the Autolab.
+Results: an Autobot which is ready to be used in the Autolab.
 
 </div>
 
@@ -94,7 +94,7 @@ now you are set to push things to github. Run the following in the same terminal
 
 ### Step 13
 
-Verify that everythig worked out by checking the yaml file in `YOUR-FLEET-ROSTER/autobots/autobotXX/hardware-compliance/YYYY-MM-DD_hardware-compliance/YYYY-MM-DD_hardware-compliance.yaml`.
+Verify that everything worked out by checking the yaml file in `YOUR-FLEET-ROSTER/autobots/autobotXX/hardware-compliance/YYYY-MM-DD_hardware-compliance/YYYY-MM-DD_hardware-compliance.yaml`.
 It should look as follows:
 
     verdict: pass

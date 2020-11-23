@@ -1,41 +1,24 @@
-# Autobot specifications and assembly {#autolab-autobot-specs status=ready}
+# Autobot set-up {#autobot-setup status=ready}
 
 Excerpt: Fantastic Autobots and how to build them : upgrade your Duckiebot to become an Autobot
 
 <div class='requirements' markdown="1">
 
-Requires: a Duckiebot in [DB18 configuration](+opmanual_duckiebot#duckiebot-configurations)
+Requires: a (set of) Duckiebot(s) in [DB19 configuration](+opmanual_duckiebot#duckiebot-configurations)
 
 Requires: additional hardware depending on configuration
 
-Results: a Autobot ready to be detected by the localization system
-
-Next Steps: if you have an autocharging area, add the parts for [autocharging](#autocharging-current-collector )
+Results: an Autobot ready to be detected by the localization system
 
 </div>
+
 
 ## Flashing the autobots
+As the Autolab is a globally used instance of Duckietown and part of official benchmarking tests and AIDO embodied challenges, you should use hostnames of the type :
 
-For a functional autolab, we strongly recommend using hostnames of the type :
+- autobotXX (with XX from 01 to 99)
 
-- autobotXX (with XX starting at 01)
-
-The autobot part can be changed, but the numbers at the end make the whole autolab code easier to use and maintain.
-
-To flash the autobots sd cards, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot).
-
-## Adding hardware to the bot {#adding-hw-to-bot status=ready}
-
-Warning: If you want to use the autocharging feature, you will have to swap the Raspberry Pi to the top part of the Duckiebot. This is due to additional hardware that will be added. So your Duckiebot should look like [](#fig:pre-autocharging-DB). As the batteries do not fit underneath the chassis you will have to get creative about where to place the battery.
-
-Note: If you want to be super safe you might want to add a [Pin protector](https://drive.google.com/open?id=1YrE0E-Qe2v_7X06ddPYgzDtFMYBIbol9) to ensure the pins will not be shorted when the Raspberry Pi is mounted on top of your Duckiebot. You can 3D print the protector with the link provided above or if you do not have a 3D printer available, use one of the many websites that offer 3D printing services such as [sculpteo](https://www.sculpteo.com/en/).
-
-<div figure-id="fig:pre-autocharging-DB">
-<img src="images/pre-autocharging-DB.jpg" style="width: 80%"/>
-<figcaption>
-Pre-flight setup of the Duckiebot if you want to use autocharging.
-</figcaption>
-</div>
+To flash the Autobot SD cards, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot).
 
 
 ## For localization
@@ -56,9 +39,9 @@ Material needed for the localization standoff.
 </div>
 
 
-### Assembly
+### Assembly of the standoff
 
-Note: Do not get confused by having the Raspberry Pi on top in the instructions. If you do not plan to use autocharging, there is no need to have it on top.
+Warning: Do not get confused by having the Raspberry Pi on top in the instructions. If you do not plan to use autocharging, there is no need to have it on top.
 
 First of all, attach the screws and standoffs to the Duckiebot. It is important that you use the same mounting position as we do in [](#fig:standoffs-mounted-autobot) because the localization system assumes the April tag to sit on a certain spot of the Autobot. If you place it differently, the localization will be imprecise.
 
@@ -95,7 +78,19 @@ Autobot ready to be detected by the localization system.
 </figcaption>
 </div>
 
+<!--
+## Adding hardware to the bot {#adding-hw-to-bot status=ready}
 
+Warning: If you want to use the autocharging feature, you will have to swap the Raspberry Pi to the top part of the Duckiebot. This is due to additional hardware that will be added. So your Duckiebot should look like [](#fig:pre-autocharging-DB). As the batteries do not fit underneath the chassis you will have to get creative about where to place the battery.
+
+Note: If you want to be super safe you might want to add a [Pin protector](https://drive.google.com/open?id=1YrE0E-Qe2v_7X06ddPYgzDtFMYBIbol9) to ensure the pins will not be shorted when the Raspberry Pi is mounted on top of your Duckiebot. You can 3D print the protector with the link provided above or if you do not have a 3D printer available, use one of the many websites that offer 3D printing services such as [sculpteo](https://www.sculpteo.com/en/).
+
+<div figure-id="fig:pre-autocharging-DB">
+<img src="images/pre-autocharging-DB.jpg" style="width: 80%"/>
+<figcaption>
+Pre-flight setup of the Duckiebot if you want to use autocharging.
+</figcaption>
+</div>
 
 
 ## For autocharging {#autocharging-current-collector status=ready}
@@ -255,3 +250,4 @@ The resulting charging-capable Duckiebot.
 #### Test your setup
 
 Connect the brass pieces to a 5V voltage source and check if the battery signals that it is charging.
+-->
