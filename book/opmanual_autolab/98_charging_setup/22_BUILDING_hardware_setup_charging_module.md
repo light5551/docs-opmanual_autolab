@@ -19,7 +19,7 @@ Requires: Extra tools for assembling [](#autocharging-extratools)
 
 Result: A charging module for charging Duckiebots [](#fig:charging_module_during_operation).
 
-Next: Assemble a Autobot that is capable of autocharging [](#autolab-autobot-specs)
+Next: Assemble a Autobot that is capable of autocharging [](#autobot-specs)
 
 </div>
 
@@ -249,4 +249,4 @@ Turn on the power supply by plugging in the power cable. There is a voltage regu
 
 ### Test your setup
 
-Place an assemblied Duckiebot [](#fig:result_cc) which is capable of charging underneath the charging rails, turn on the power supplies and see if the battery is going to charge.
+Place an assembled Duckiebot [](#fig:db_w_cc) which is capable of charging underneath the charging rails, turn on the power supplies and see if the battery is going to charge.

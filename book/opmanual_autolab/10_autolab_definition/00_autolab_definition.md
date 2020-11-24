@@ -36,7 +36,7 @@ For an Autolab to work, a precise map of the city is needed including the placem
 
 
 ### The Duckietown
-The [Duckietown](#) in the Autolab refers to a central Raspberry Pi (a device) without any actuators or sensors, that is able to connect to multiple devices within the Autolab. It can store the Autolab map, data logs, etc. It follows the principle of a town as a robot in the quest for a fully automated Autolab.
+The [Duckietown](#autolab-town) in the Autolab refers to a central Raspberry Pi (a device) without any actuators or sensors, that is able to connect to multiple devices within the Autolab. It can store the Autolab map, data logs, etc. It follows the principle of a town as a robot in the quest for a fully automated Autolab.
 
 
 ### The localization system

@@ -1,4 +1,4 @@
-# Auto charging {#part:autolab-auto-charging status=ready}
+# Auto charging {#part:autolab-auto-charging status=deprecated}
 
 ## Purpose
 

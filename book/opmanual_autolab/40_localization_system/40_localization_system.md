@@ -10,7 +10,7 @@ Next Steps: The first step is to build the [Watchtowers](#watchtower-hardware)
 </div>
 
 
-The localization system is an important part of the Autolab, as it gives the poses of all Autobots in the city to a server. In the Autolab, the Autobots are Duckiebots that have been improved to Autolab specifications (see [](#autolab-autobot-specs)).
+The localization system is an important part of the Autolab, as it gives the poses of all Autobots in the city to a server. In the Autolab, the Autobots are Duckiebots that have been improved to Autolab specifications (see [](#autobot-specs)).
 
 Note: Watchtowers are an experimental feature of Duckietown, which are currently only used in Autolabs.
 

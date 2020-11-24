@@ -1,4 +1,4 @@
-# Autobot hardware checks {#autolab-autobot-hw-checks status=ready}
+# Autobot hardware checks {#autolab-autobot-hw-checks status=deprecated}
 
 Excerpt: run a compliance test and store the information at the right place
 
@@ -6,7 +6,7 @@ We have put together a step-by-step instruction to ensure that every Autobot tha
 
 <div class='requirements' markdown="1">
 
-Requires: a assembled [Autobot](#autolab-autobot-specs)
+Requires: an assembled [Autobot](#autobot-specs)
 
 Results: an Autobot which is ready to be used in the Autolab.
 
@@ -23,7 +23,7 @@ Power on the Duckiebot. Then run the following command on your Computer. It will
 ### Step 1
 
 If you mounted the Raspberry Pi on top, check that a pin protector is mounted on the pins of the hut to prevent pins from shorting out.
-If no protector is installed yet, then first check that no pins are bent or are making contact and then add the protector. It should slide into place without applying any force. The stl file to 3D print the pin protector can be found in [](#adding-hw-to-bot).
+If no protector is installed yet, then first check that no pins are bent or are making contact and then add the protector. It should slide into place without applying any force. The stl file to 3D print the pin protector can be found in [](#autolab-auto-charging).
 
 
 ### Step 3

@@ -4,7 +4,7 @@ Excerpt:  The AprilTag specifications and measure.
 
 <div class='requirements' markdown="1">
 
-Requires: A fully operational [Duckietown](+opmanual_duckietown#duckietowns), compliant [autobots](#autolab-autobot-specs) and a [map of the Autolab](#autolab-map-making).
+Requires: A fully operational [Duckietown](+opmanual_duckietown#duckietowns), compliant [autobots](#autobot-specs) and a [map of the Autolab](#autolab-map-making).
 
 Results: The city is ready to be used for localization
 
@@ -26,7 +26,7 @@ As a reminder, the Apriltags already have predetermined sets of usecase. The ran
 
 For localization, **the ground Apriltags are in range 300 to 399**.
 
-Note: For the Autobots themselves, the tags are in range 400 to 439. 
+Note: For the Autobots themselves, the tags are in range 400 to 439.
 
 <col4 figure-id="tab:tag-ranges" figure-caption="Apriltag ID ranges">
     <span>Purpose</span><span>Size</span><span>Family</span><span>ID Range</span>
@@ -38,7 +38,7 @@ Note: For the Autobots themselves, the tags are in range 400 to 439.
 
 </col4>
 
-To print the ones you need, you can find them here: [pdf](https://github.com/duckietown/docs-resources_autolab/blob/daffy/AprilTags/AprilTags_localization_ID300-399.pdf) 
+To print the ones you need, you can find them here: [pdf](https://github.com/duckietown/docs-resources_autolab/blob/daffy/AprilTags/AprilTags_localization_ID300-399.pdf)
 
 ## Placing the ground Apriltags and the Watchtowers
 

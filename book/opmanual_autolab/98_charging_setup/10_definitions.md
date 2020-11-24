@@ -15,7 +15,7 @@ Inside a charging module, Duckiebots drive in a charger ([](#sec:autocharging-de
 
 ## Current collector {#autocharging-definitions-currcol}
 
-The current collector [](#fig:soldered_cc) is a flexible shaft mounted on top of a Duckiebot. Its purpose is to make contact with the charging rails.
+The current collector [](#fig:db_w_cc) is a flexible shaft mounted on top of a Duckiebot. Its purpose is to make contact with the charging rails.
 
 <div figure-id="fig:db_w_cc">
 <img src="images/result_current_collector.jpg" style="width: 80%"/>
@@ -67,7 +67,7 @@ A charging module describes the combination of a charging rail and all connected
 
 ## Charger {#autocharging-definitions-charger}
 
-A charger describes one single lane of a charging module. See [](#fig:conventions). 
+A charger describes one single lane of a charging module. See [](#fig:conventions).
 
 <div figure-id="fig:conventions">
 <img src="images/conventions.png" style="width: 100%"/>
@@ -88,7 +88,7 @@ A charger intersection is a 3-way intersection where the charger entrances and e
 
 ## Charging Manager {#autocharging-definitions-charging-manager}
 
-A charging manager is basically a Watchtower with a traffic light. Its task is to tell Duckiebots to which charger they should drive in. 
+A charging manager is basically a Watchtower with a traffic light. Its task is to tell Duckiebots to which charger they should drive in.
 The charging manager must be allocated on the maintenance intersection. See [](#fig:int_def)
 
 ## Doorkeeper {#autocharging-definitions-doorkeeper}
@@ -104,5 +104,3 @@ Below you can find the definitions of maintenance intersection and charger inter
 Definitions of Intersections and Placement of Charging Manager and Doorkeepers for Module 2
 </figcaption>
 </div>
-
-
