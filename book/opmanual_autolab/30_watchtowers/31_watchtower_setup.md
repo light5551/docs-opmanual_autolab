@@ -1,4 +1,4 @@
-# Watchtower Initialization {#watchtower-initialization status=ready}
+# BUILD - Watchtower Initialization {#watchtower-initialization status=ready}
 
 <div class='requirements' markdown="1">
 

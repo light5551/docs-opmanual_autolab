@@ -1,4 +1,4 @@
-# BUILDING - Placing Watchtowers in a city {#localization-watchtower-placement status=ready}
+# BUILD - Placing Watchtowers in a city {#localization-watchtower-placement status=ready}
 
 Excerpt: How to place and connect the Watchtowers in the city
 
@@ -23,9 +23,9 @@ Picture of the Zurich ETH Autolab.
 </figcaption>
 </div>
 
-There's only two general rule of putting Watchtowers in a city. 
+There's only two general rule of putting Watchtowers in a city.
 
-- First, make sure that the field of views of Watchtowers do cover the whole city. 
+- First, make sure that the field of views of Watchtowers do cover the whole city.
 - Second, there should be enough overlapping between field of view between Watchtowers.
 
 Below is a more synthetic view of the watchtower placement in ETHZ. The ratio of watchtower to road tiles is around 2/3.
@@ -37,7 +37,7 @@ Overview of the autolab and of the watchtower placement. Each number shows the p
 </figcaption>
 </div>
 
-Below is the field of view of watchtowers. Please keep in mind that they cover approximately 3 tiles each (even more in some cases), but that on the edge of the image, despite rectification, the image is distorted and thus the apriltag detection might give inaccurate results. This is why overlapping field of view are important. The more the better. 
+Below is the field of view of watchtowers. Please keep in mind that they cover approximately 3 tiles each (even more in some cases), but that on the edge of the image, despite rectification, the image is distorted and thus the apriltag detection might give inaccurate results. This is why overlapping field of view are important. The more the better.
 
 <div figure-id="fig:watchtower_view_corner">
 <img src="opmanual_autolab/images/watchtower_placement/wt_view_corner.png" style="width: 90%"/>

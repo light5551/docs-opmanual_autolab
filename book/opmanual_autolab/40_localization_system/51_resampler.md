@@ -1,4 +1,4 @@
-# The Resampler {#localization-resampler status=ready}
+# SW - The Resampler {#localization-resampler status=ready}
 
 Excerpt: The details of the second layer of the system, the resampler
 
@@ -6,10 +6,10 @@ Excerpt: The details of the second layer of the system, the resampler
 
 Requires: Knowing the role of the ROS listener (layer 1) of the localization system does. [](#localization-ros-listener)
 
-Results: Knowing what the resampler does and why. 
+Results: Knowing what the resampler does and why.
 </div>
 
-<minitoc/> 
+<minitoc/>
 
 ## The place of the layer in the bigger picture
 

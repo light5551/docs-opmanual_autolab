@@ -10,22 +10,18 @@ Results: A working Autolab.
 
 <minitoc/>
 
-Warning: Autolabs are still experimental. We are working on preparing a set of instructions for you but it is still all in its beta version.  
-
 
 ### The Big Picture {nonumber notoc}
 
-The goal of an Autolab is to create a human free, automated environment for Duckiebots. This requires a bit more than just a standard [Duckietown](+opmanual_duckietown#book) to work.
-
-An Autolab can serve different purposes. It is used for research on the Duckietown platform, and is also being used to organize the embodied challenges of [AIDO]((+AIDO#book)).
+The goal of an Autolab is to create a human free, automated environment for Duckiebots. This requires a bit more than just a standard [Duckietown](+opmanual_duckietown#book) to work. An Autolab can serve different purposes. It is used for research on the Duckietown platform, and is also being used to organize the embodied challenges of [AIDO]((+AIDO#book)).
 
 The aim of this book is to present:
 
-- a set of instructions (labeled BUILDING) on how to build an Autolab to current specifications
-- a set of instructions (labeled DEMO) on how to run the Autolab functions or demos
-- a set of guides (labeled SOFTWARE) to the different pieces of software that are used and are under development
+- a set of instructions (labeled **BUILD**) on how to build an Autolab to current specifications
+- a set of instructions (labeled **DEMO**) on how to run the Autolab functions or demos
+- a set of guides (labeled **SW**) to the different pieces of software that are used and are under development
 
-### Sections
+### Section overview {nonumber notoc}
 
 In each of the following sections you will find the BUILDING, the DEMO and the SOFTWARE pages.
 
@@ -33,6 +29,8 @@ You can find the up-to-date status of each page of the book at the top-right of 
 
 - [](#autolab-definition) : The precise definition of an Autolab
 - [](#autobot-specs) : The set of instructions to setup the minimal working environment
-- [](#autolab-auto-charging) : The set of instructions to build and operate an autocharging station
-- [](#autolab-localization) : The set of instruction to build and operate the localization system
+- [](#autolab-map) : The set of instructions to create a precise virtual map of your Autolab
+- [](#autolab-town) : The set of instructions to set up your central Duckietown device
+- [](#watchtower-hardware) : The set of instructions explaining the set up of the watchtower devices
+- [](#autolab-localization) : The set of instructions to set up and operate the localization system
 - [](#autolab-operation-manual) : The set of instructions to operate the whole Autolab

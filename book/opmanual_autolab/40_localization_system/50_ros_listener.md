@@ -1,5 +1,5 @@
 
-# The ROS listener {#localization-ros-listener status=ready}
+# SW - The ROS listener {#localization-ros-listener status=ready}
 
 Excerpt: The details of the first layer of the localization system, the ros wrapper.
 
@@ -10,7 +10,7 @@ Requires: Knowing what the processed input to the localization system is. ()[#lo
 Results: Knowing the role of the ROS listener (layer 1) of the localization system does.
 </div>
 
-<minitoc/> 
+<minitoc/>
 
 ## The place of the layer in the bigger picture
 
@@ -76,7 +76,7 @@ The rest of the **apriltags** have also one frame, called `apriltag_base`.
 
 Since we want to consider the autobot only in its `autobot_base` frame, this means two things:
 
-- The transforms from the watchtowers to the autobots are actually from `watchtower_camera` to `autobot_apriltag`. They therefore need to be transferred to be `watchtower_camera` to `autobot_base`. The `autobot_apriltag` to `autobot_base` is a known transform that is applied to all such transforms. 
+- The transforms from the watchtowers to the autobots are actually from `watchtower_camera` to `autobot_apriltag`. They therefore need to be transferred to be `watchtower_camera` to `autobot_base`. The `autobot_apriltag` to `autobot_base` is a known transform that is applied to all such transforms.
 - Similarly, the messages coming from autobots cameras are `autobot_camera` to `apriltag_base`, so we transform them to `autobot_base` to `apriltag_base` by using the know static transform `autobot_base` to `autobot_camera`. Note that in the first case, it is a right multiplication, and in the second a left multiplication (in SE3).
 
 Todo: Add pictures

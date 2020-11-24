@@ -1,6 +1,6 @@
-# Autobot set-up {#autobot-setup status=ready}
+# BUILD - Autobot set-up {#autobot-setup status=ready}
 
-Excerpt: Fantastic Autobots and how to build them : upgrade your Duckiebot to become an Autobot
+Excerpt: Fantastic Autobots and how to build them, upgrade your Duckiebot to become an Autobot
 
 <div class='requirements' markdown="1">
 

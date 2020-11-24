@@ -1,6 +1,6 @@
-# Autobot hardware checks {#autolab-autobot-hw-checks status=ready}
+# Autobot hardware checks {#autolab-autobot-hw-checks status=deprecated}
 
-Excerpt: run a compliance test and store the information at the right place
+Excerpt: Run a compliance test and store the information at the right place
 
 We have put together a step-by-step instruction to ensure that every Autobot that enters the Autolab is ready to go. We keep track of them in a GitHub Repository which will be used to keep track of the change history of every Autobot as well as to provide additional information to the user.
 

@@ -1,4 +1,4 @@
-# Input processing {#localization-input-processing status=ready}
+# SW - Input processing {#localization-input-processing status=ready}
 
 Excerpt: The pipeline to treat the raw input to the system and transform it for the graph.
 

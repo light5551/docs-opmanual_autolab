@@ -1,13 +1,13 @@
 
-# Input to the system {#localization-input status=ready}
+# SW - Input to the system {#localization-input status=ready}
 
 Excerpt: The input data fed to the localization system
 
 <!-- <div class='requirements' markdown="1">
 
-Requires: 
+Requires:
 
-Results: 
+Results:
 </div> -->
 
 <minitoc/>

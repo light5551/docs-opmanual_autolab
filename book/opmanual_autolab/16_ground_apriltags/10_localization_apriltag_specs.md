@@ -1,10 +1,10 @@
-# BUILDING - Apriltags specifications {#localization-apriltags-specs status=ready}
+# BUILD - Placing Apriltags {#localization-apriltags-specs status=ready}
 
 Excerpt:  The AprilTag specifications and measure.
 
 <div class='requirements' markdown="1">
 
-Requires: A fully operational [Duckietown](+opmanual_duckietown#duckietowns), compliant [autobots](#autobot-specs) and a [map of the Autolab](#autolab-map-making).
+Requires: A fully operational [Duckietown](+opmanual_duckietown#book), compliant [autobots](#autobot-specs) and a [map of the Autolab](#autolab-map-making).
 
 Results: The city is ready to be used for localization
 
@@ -14,17 +14,13 @@ Next Steps: The two localization demos: [offline and online](#localization-demo)
 <minitoc/>
 
 
-## Why do we need ground Apritags
+## Why do we need ground Apriltags
 
-Watchtowers can move around very easily. Collisions with duckiebots and humans are happening all the time. To create a robust way of having a global localization in the autolab, we decide not to fix the Watchtowers.
-
-Instead, we fix ground apriltags on the ground, and we measure and record their positions in the map. This provides enough ground truth for the localization system.
+Watchtowers can move around very easily. Collisions with duckiebots and humans are happening all the time. To create a robust way of having a global localization in the autolab, we decide not to fix the Watchtowers. Instead, we fix ground apriltags on the ground, and we measure and record their positions in the map. This provides enough ground truth for the localization system.
 
 ## Making the ground Apriltags {#making-ground-apriltags}
 
-As a reminder, the Apriltags already have predetermined sets of usecase. The ranges of tags are specified in [](#tab:tag-ranges).
-
-For localization, **the ground Apriltags are in range 300 to 399**.
+As a reminder, the Apriltags already have predetermined sets of usecase. The ranges of tags are specified in [](#tab:tag-ranges). For localization, **the ground Apriltags are in range 300 to 399**.
 
 Note: For the Autobots themselves, the tags are in range 400 to 439.
 
@@ -42,9 +38,7 @@ To print the ones you need, you can find them here: [pdf](https://github.com/duc
 
 ## Placing the ground Apriltags and the Watchtowers
 
-At this point, you have already decided where to [place your Watchtowers](#localization-watchtower-placement).
-
-Now, you need to place the ground apriltags. Once they are printed, place them with double sided tape respecting the following convention:
+At this point, you have already decided where to [place your Watchtowers](#localization-watchtower-placement). Now, you need to place the ground apriltags. Once they are printed, place them with double sided tape respecting the following convention:
 
 * The ground Apriltags are outside of roads
 * The ground Apriltags are near the side of the road, and the name of the tag is oriented toward the road (see figure).

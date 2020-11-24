@@ -1,4 +1,4 @@
-# The Autolab town {#autolab-town-init status=ready}
+# BUILD - The Autolab town {#autolab-town-init status=ready}
 
 <div class='requirements' markdown="1">
 

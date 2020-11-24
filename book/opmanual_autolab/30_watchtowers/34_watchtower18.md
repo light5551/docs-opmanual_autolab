@@ -1,4 +1,4 @@
-# BUILDING - Watchtower in WT18 configuration {#watchtower-hardware-assembly-WT18 status=deprecated}
+# BUILD - Watchtower in WT18 configuration {#watchtower-hardware-assembly-WT18 status=deprecated}
 
 <div class='requirements' markdown="1">
 

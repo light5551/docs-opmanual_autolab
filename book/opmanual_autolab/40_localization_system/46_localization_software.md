@@ -1,4 +1,4 @@
-# Localization System - Software explanation {#part:autolab-localization-software status=ready}
+# SW - Localization explanation {#autolab-localization-software status=ready}
 
 Excerpt: The whole localization software explained
 
