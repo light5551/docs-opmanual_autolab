@@ -17,7 +17,7 @@ Warning: Autolabs are still experimental. We are working on preparing a set of i
 
 The goal of an Autolab is to create a human free, automated environment for Duckiebots. This requires a bit more than just a standard [Duckietown](+opmanual_duckietown#book) to work.
 
-An Autolab can serve different purposes. It is used for research on the Duckietown platform, and is also being used to organize the embodied challenges of [AIDO]((+AIDO#AIDO)).
+An Autolab can serve different purposes. It is used for research on the Duckietown platform, and is also being used to organize the embodied challenges of [AIDO]((+AIDO#book)).
 
 The aim of this book is to present:
 

@@ -1,4 +1,4 @@
-# Autobot hardware checks {#autolab-autobot-hw-checks status=deprecated}
+# Autobot hardware checks {#autolab-autobot-hw-checks status=ready}
 
 Excerpt: run a compliance test and store the information at the right place
 

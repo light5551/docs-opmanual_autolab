@@ -1,4 +1,4 @@
-# Autolab fleet roster {#autolab-fleet-roster status=deprecated}
+# Autolab fleet roster {#autolab-fleet-roster status=ready}
 
 Excerpt: Handling the fleet of Autobots.
 
