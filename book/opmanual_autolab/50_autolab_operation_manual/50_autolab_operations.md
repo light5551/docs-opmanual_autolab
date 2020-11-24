@@ -1,4 +1,4 @@
-# Autolab operation manual {#part:autolab-operation-manual status=ready}
+# Autolab control interface {#part:autolab-operation-manual status=ready}
 
 Excerpt: The autolab mission control capacities
 

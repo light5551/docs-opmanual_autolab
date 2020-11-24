@@ -20,13 +20,11 @@ Warning: this part is under development, ignore for now
 
 ## Flashing the town device
 
-The Duckietown or town used in the Autolab is a Raspberry Pi 4 without any actuators or sensors. The image setup procedure for duckietowns is the same as for Duckiebots. In the Autolab, you should use the naming convention:
+The Duckietown or town used in the Autolab is a Raspberry Pi 4 without any actuators or sensors. The image setup procedure for Duckietowns is similar as for Duckiebots. Please add `--type duckietown` to the flashing procedure. In the Autolab, you should use the naming convention:
 
 * hostname: **duckietownXX** (with XX starting from 01)
 
 Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` version of the shell.
-
-Note: Please add `--type duckietown` to the flashing procedure
 
 A complete command will look like:
 

@@ -6,7 +6,7 @@ Requires: A Duckietown up to specifications from [the Duckietown book](+opmanual
 
 Results: Your fleet of Autobots ready for operation.
 
-Next Steps: Learn about the Autolab [map](#autolab-map).
+Next Steps: Learn about the Autolab [ground apriltags](#apriltag-specs).
 </div>
 
 <minitoc/>

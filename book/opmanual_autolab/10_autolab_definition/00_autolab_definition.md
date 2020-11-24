@@ -44,7 +44,7 @@ The [Duckietown](#autolab-town) in the Autolab refers to a central Raspberry Pi 
 The [localization system](#autolab-localization) is comprised of a set of watchtowers distributed in the city and a central Duckietown device representing the city. If you have multiple cities in your Autolab, make sure to assign each city a different Duckietown device. The information stream from watchtowers and Autobots is processed to extract the poses over time from all Autobots, thereby generating a trajectory. The stream of images from watchtowers also finds use in many other projects than the localization system here described.
 
 
-### The Autolab operation server
+### The Autolab control interface
 
 Warning: this part is under development and will be updated in due time.
 

@@ -10,6 +10,7 @@ Results: A working Autolab.
 
 <minitoc/>
 
+Warning: this book is under complete review, only use if you are currently involved with Autolab development or AIDO.
 
 ### The Big Picture {nonumber notoc}
 
@@ -23,14 +24,13 @@ The aim of this book is to present:
 
 ### Section overview {nonumber notoc}
 
-In each of the following sections you will find the BUILDING, the DEMO and the SOFTWARE pages.
-
-You can find the up-to-date status of each page of the book at the top-right of the page, that will change as we write them down. Please only refer to those marked as either BETA or READY.
+In each of the following sections you will find the BUILD, the DEMO and the SW pages. You can find the up-to-date status of each page of the book at the top-right of the page, that will change as we write them down. Please only refer to those marked as either BETA or READY.
 
 - [](#autolab-definition) : The precise definition of an Autolab
-- [](#autobot-specs) : The set of instructions to setup the minimal working environment
+- [](#autobot-specs) : The set of instructions to setup your fleet of dedicated Duckiebots
+- [](#apriltag-specs) : The set of instructions to upgrade your city layout to that of an Autolab
 - [](#autolab-map) : The set of instructions to create a precise virtual map of your Autolab
 - [](#autolab-town) : The set of instructions to set up your central Duckietown device
-- [](#watchtower-hardware) : The set of instructions explaining the set up of the watchtower devices
+- [](#watchtower-hardware) : The set of instructions explaining the set-up of the watchtower devices
 - [](#autolab-localization) : The set of instructions to set up and operate the localization system
-- [](#autolab-operation-manual) : The set of instructions to operate the whole Autolab
+- [](#autolab-operation-manual) : The set of instructions to operate the entire Autolab
