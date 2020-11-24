@@ -12,6 +12,9 @@ Results: an Autobot which is ready to be used in the Autolab.
 
 </div>
 
+Warning: this part is deprecated.
+
+
 ## Checklist
 
 ### Step 0

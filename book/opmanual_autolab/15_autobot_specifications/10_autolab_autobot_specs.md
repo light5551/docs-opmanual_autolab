@@ -14,11 +14,9 @@ Results: an Autobot ready to be detected by the localization system
 
 
 ## Flashing the autobots
-As the Autolab is a globally used instance of Duckietown and part of official benchmarking tests and AIDO embodied challenges, you should use hostnames of the type :
+To flash the Autobot SD cards, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot). As the Autolab is a globally used instance of Duckietown and part of official benchmarking tests and AIDO embodied challenges, you should use hostnames of the type :
 
-- autobotXX (with XX from 01 to 99)
-
-To flash the Autobot SD cards, follow the instructions [here](+opmanual_duckiebot#setup-duckiebot).
+- hostname: `autobotXX` (with XX from 01 to 99)
 
 
 ## For localization

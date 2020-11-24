@@ -1,6 +1,6 @@
 # BUILD - The Autolab map {#autolab-map-making status=ready}
 
-Excerpt: Creating and managing the map of your Autolab. In the following chapters of the book, there are many uses to a software defined map of your Autolab. It is for instance required for a working localization pipeline.
+Excerpt: Creating and managing the software defined map of your Autolab
 
 <div class='requirements' markdown="1">
 

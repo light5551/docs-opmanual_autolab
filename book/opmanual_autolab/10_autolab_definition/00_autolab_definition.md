@@ -1,38 +1,38 @@
 # Autolab definition {#part:autolab-definition status=ready}
 
+Excerpt: Explanation of the Autolab, what it consists of and what to use it for.
+
 <div class='requirements' markdown="1">
 
 Requires: A Duckietown up to specifications from [the Duckietown book](+opmanual_duckietown#book).
 
 Results: Knowledge of the fundamental structures that make an Autolab.
 
-Next Steps: Setting up the [watchtowers](#watchtower-hardware).
+Next Steps: Setting up the [Autobots](#autobot-specs).
 
 </div>
 
 An Autolab is a Duckietown with a set of additional structures:
 
-- A fleet of Autobots*
-- A set of watchtowers
+- A fleet of Autobots
+- A set of Watchtowers
 - A map
-- A town device
+- A Duckietown
 - A localization system
 - An Autolab control interface
 - A maintenance area (optional)
 
-\*The Duckiebots that are used inside an Autolab are called Autobots and rely on additional specifications.
-
 
 ### The fleet of Autobots
-An Autolab is nothing without its fleet of Autobots. The [Autobots](#autobot-setup) are Duckiebots improved with different parts, mainly for localization (extensions for autocharging exist). As the Autobots are used to run benchmarking tests, submissions or other, they should follow a strict procedure of calibration. It is therefore advised to leep a log of all events that happen throughout the life of an Autobot, by storing a lab-specific log on Github (previously called *fleet-roster*) or on Confluence.
+An Autolab is nothing without its fleet of Autobots. The [Autobots](#autobot-setup) are Duckiebots improved with different parts, mainly for localization (extensions for autocharging exist). As the Autobots are used to run benchmarking tests, submissions or other, they should follow a strict procedure of calibration. It is therefore advised to keep a log of all events that happen throughout the life of an Autobot, by storing a lab-specific log on Github (previously called *fleet-roster*) or on Confluence.
 
 
 ### The watchtowers
-[Watchtowers](#watchtower-hardware) are devices in Duckietown with a single camera and no actuation. In the Autolab, they guarantee coverage of the city through the localization system.
+[Watchtowers](#watchtower-hardware) are devices in Duckietown with a single camera and no actuation. In the Autolab, they guarantee coverage of the city for the localization system and other projects.
 
 
 ### The Map
-For an Autolab to work, a precise map of the city is needed including the placement of ground Apriltags as a reference for the localization system. This part is handled in [](#autolab-map-making)
+For an Autolab to work, a precise map of the city is needed including the placement of ground Apriltags as the map reference for the localization system. This part is handled in [](#autolab-map-making)
 
 
 ### The Duckietown
@@ -41,7 +41,7 @@ The [Duckietown](#autolab-town) in the Autolab refers to a central Raspberry Pi 
 
 ### The localization system
 
-The [localization system](#autolab-localization) is comprised of a set of watchtowers distributed in the city and a central Duckietown device representing the city. If you have multiple cities in your Autolab, make sure to assign each city a different Duckietown device. The information stream from watchtowers and Autobots is processed to extract the poses over time from all Autobots, thereby generating a trajectory. The stream of images from watchtowers also finds use in many other projects than the localization system here described.
+The [localization system](#autolab-localization) is run on a set of watchtowers distributed in the city and a central Duckietown device representing the city. If you have multiple cities in your Autolab, make sure to assign each city a different Duckietown device. To run the localization system, you will have to go through the chapters of the book prior to [](#autolab-localization). In essence, the system processes the information stream from watchtowers and Autobots to extract the poses over time from all Autobots, thereby generating a trajectory. The ground Apriltags are used as reference for generating the trajectory accurately within the map. Please note that the stream of images from watchtowers also finds use in many other projects than the localization system here described.
 
 
 ### The Autolab control interface
@@ -60,7 +60,7 @@ Sample map for an Autolab
 -->
 
 ### The maintenance area
-The maintenance area is an area that is designed to include the activities of an Autolab which are not related to the self-driving goals of Duckietown. Currently it is only comprised of the [auto-charging area](#autolab-auto-charging), but could be extended to include, say:
+The maintenance area is an optional extension to the city layout. It is designed to include the activities of an Autolab which are not related to the self-driving goals of Duckietown. Currently it is only comprised of the [auto-charging area](#autolab-auto-charging), but could be extended to include, say:
 
 - A parking lot
 - An auto-calibration arena

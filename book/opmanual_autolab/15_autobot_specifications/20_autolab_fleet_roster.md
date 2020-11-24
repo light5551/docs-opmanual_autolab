@@ -4,12 +4,15 @@ Excerpt: Handling the fleet of Autobots.
 
 <div class='requirements' markdown="1">
 
-Requires: Knowledge about what a Autolab is [](#part:autolab-definition)
+Requires: Knowledge about what an Autolab is [](#part:autolab-definition)
 
 Results: Knowledge about what a fleet roster is and why it is used
 
 Next Steps: create your own autolab fleet roster and add data t it [](#autolab-autobot-hw-checks)
 </div>
+
+Warning: this part is deprecated.
+
 
 ## Motivation
 

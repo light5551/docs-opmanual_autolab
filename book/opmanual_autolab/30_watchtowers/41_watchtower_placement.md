@@ -1,7 +1,5 @@
 # BUILD - Placing Watchtowers in a city {#localization-watchtower-placement status=ready}
 
-Excerpt: How to place and connect the Watchtowers in the city
-
 <div class='requirements' markdown="1">
 
 Requires: Assembled [Watchtowers](#watchtower-hardware).
@@ -25,8 +23,8 @@ Picture of the Zurich ETH Autolab.
 
 There's only two general rule of putting Watchtowers in a city.
 
-- First, make sure that the field of views of Watchtowers do cover the whole city.
-- Second, there should be enough overlapping between field of view between Watchtowers.
+- Firstly, make sure that the field of views of Watchtowers do cover the whole city (i.e. the ground Apriltags)
+- Secondly, there should be sufficient overlap between field of view between Watchtowers.
 
 Below is a more synthetic view of the watchtower placement in ETHZ. The ratio of watchtower to road tiles is around 2/3.
 
@@ -55,9 +53,11 @@ View from a watchtower on a straight line. It covers approximately 3 tiles.
 
 ## Connection of the watchtowers
 
-Beside the placement of Watchtowers, they should be connected via ethernet cables. At ETH, the Watchtowers are first connected to switches, that are connected to our router. At ETHZ, all of the Autolab is on a stage, and we pull the cables directly from underneath it, to keep the track clean from cables.
+Beside the placement of Watchtowers, they should be connected via Ethernet cables, using a Power over Ethernet (PoE) approach. To use this, please make use of the watchtower19-B version and a suitable switch connection.
 
-Then we have one PC connected via ethernet to the router, for faster and more reliable communication with the watchtowers.
+At ETH Zurich, the Watchtowers are connected to a main switch, which is connected to our router. Also, all of the Autolab is on a stage, and we pull the cables directly from underneath it, to keep the track clean from cables. Then we have one PC connected via Ethernet to the router, for faster and more reliable communication with the Watchtowers.
+
+Note: if you do not use PoE, prepare your USB chargers and cables that support 2.4A output.
 
 ### Recommended network setup
 
@@ -66,9 +66,3 @@ Since all Watchtowers might send data at the same time, we recommend you have a 
 The best, and currently used in the ETHZ Autolab, is a switch with 1 Gb/s ports for each watchtower, with 2 ports at 10 Gb/s, that are connected to a central computer (which in turn needs a 10 Gb/s network card).
 
 Todo: explain the router requirements.
-
-### Power management
-
-Last but not least, these Watchtowers needs _power_. Remember to prepare your USB chargers and cables that support 2.4A output.
-
-Note: EXPERIMENTAL : If you want to get less cables around, the possibility of using POE (power over ethernet) exists. With a additional hat, you can power the pi directly by the ethernet cable (provided that you switch provides the service as well).

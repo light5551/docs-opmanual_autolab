@@ -1,10 +1,12 @@
 # BUILD - The Autolab town {#autolab-town-init status=ready}
 
+Excerpt: Explanation of the central Duckietown device as used in the Autolab
+
 <div class='requirements' markdown="1">
 
 Requires: An SD card of size at least 32 GB.
 
-Requires: A computer with a **Ubuntu OS** (for flashing the SD card), an internet connection, an SD card reader, and 16 GB of free space.
+Requires: A computer with **Ubuntu OS** (for flashing the SD card), an internet connection, an SD card reader, and 16 GB of free space.
 
 Requires: Duckietown Shell, Docker, etc, as configured in [](+opmanual_duckiebot#laptop-setup).
 
@@ -22,9 +24,9 @@ Warning: this part is under development, ignore for now
 
 The Duckietown or town used in the Autolab is a Raspberry Pi 4 without any actuators or sensors. The image setup procedure for Duckietowns is similar as for Duckiebots. Please add `--type duckietown` to the flashing procedure. In the Autolab, you should use the naming convention:
 
-* hostname: **duckietownXX** (with XX starting from 01)
+* hostname: `duckietownXX` (with XX starting from 01)
 
-Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` version of the shell.
+Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` shell version.
 
 A complete command will look like:
 

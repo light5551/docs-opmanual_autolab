@@ -1,5 +1,7 @@
 # Watchtowers {#part:watchtower-hardware status=ready}
 
+Excerpt: How to build, place and connect the Watchtowers in the Autolab
+
 <div class='requirements' markdown="1">
 
 Requires: Material: Watchtower components. To obtain them contact info@duckietown.org.

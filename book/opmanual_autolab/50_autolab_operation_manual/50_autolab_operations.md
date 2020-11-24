@@ -1,6 +1,6 @@
 # Autolab control interface {#part:autolab-operation-manual status=ready}
 
-Excerpt: The autolab mission control capacities
+Excerpt: The control interface for operating the Autolab and AIDO submissions
 
 <div class='requirements' markdown="1">
 

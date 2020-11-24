@@ -1,18 +1,16 @@
 # Localization System {#part:autolab-localization status=ready}
 
+Excerpt: The manual to run and the explanation behind the localization system
+
 <div class='requirements' markdown="1">
 
-Requires: A fully operational [Duckietown](+opmanual_duckietown#book)
+Requires: A fully operational [Duckietown](+opmanual_duckietown#book) as explained in the previous chapters of this book.
 
 Results: A working localization system to localize all Autobots inside the Autolab
 
 Next Steps: The first step is to build the [Watchtowers](#watchtower-hardware)
 </div>
 
-
-The localization system is an important part of the Autolab, as it gives the poses of all Autobots in the city to a server. In the Autolab, the Autobots are Duckiebots that have been improved to Autolab specifications (see [](#autobot-specs)).
-
-Note: Watchtowers are an experimental feature of Duckietown, which are currently only used in Autolabs.
 
 ### Sections {nonumber notoc}
 
@@ -33,14 +31,15 @@ To track the AprilTags, we use Watchtowers. In the spirit of Duckietown, a Watch
 
 Apart from AprilTags on Autobots, there are other AprilTags that are on the ground, called Ground AprilTags. The precise location for each Ground AprilTag is known in advance. We build a pose graph of all the relative poses bewteen Watchtowers and Autobots, and what they see. By running optimization on the graph, we merge the local influx of data from all agents into a global position graph of all agents, using the Ground AprilTags as global fixed references.
 
-### BUILDING - Hardware {nonumber notoc}
+### BUILD - Hardware {nonumber notoc}
 
-There are two structural elements required to have a working system:
+There are three structural elements required to have a working system:
 
 * The Watchtowers
-* The ground AprilTags
+* The Duckietown
+* The ground AprilTags and the city
 
-The localization system is designed such that Watchtowers don't need to be at a specific height or position as long as they can view "sufficient" area of the Autolab. (TODO: specify what "sufficient" means) However, we still provide the specs of the Watchtowers so that you can produce your own Watchtowers. See hardware part in chapter [](#watchtower-hardware).
+The localization system is designed such that Watchtowers do not need to be at a specific height or position as long as they can view "sufficient" area of the Autolab - explained [here](#localization-watchtower-placement). However, we still provide the specs of the Watchtowers so that you can produce your own Watchtowers. See hardware part in [](#watchtower-hardware).
 
 Moreover, the ground AprilTags need to follow conventions specified in the chapter [](#localization-apriltags-specs).
 
@@ -56,4 +55,4 @@ While the long term objective is to only do online localization, the offline loc
 
 ### SOFTWARE - Description {nonumber notoc}
 
-The software is explained in detailed in chapter [](#autolab-localization-software)
+The software is explained in detailed in [](#autolab-localization-software)

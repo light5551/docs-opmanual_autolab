@@ -6,7 +6,7 @@ Requires: A Duckietown up to specifications from [the Duckietown book](+opmanual
 
 Results: A fully documented map of your Autolab.
 
-Next Steps: Learn about the Autolab [town](#autolab-town).
+Next Steps: Learn about the Autolab [ground Apriltags](#apriltag-specs).
 </div>
 
 <minitoc/>
