@@ -21,7 +21,7 @@ Next Steps: [Place the Watchtower in the city](#localization-watchtower-placemen
 
 The image setup procedure for Watchtowers is the same as for Duckiebots. Please add `--type watchtower` to the flashing procedure. In the Autolab, you should use the naming convention:
 
-* hostname: **watchtowerXX** (where XX specify the number of the Watchtower)
+* hostname: `watchtowerXX` (with XX from 01 to 99)
 
 Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` shell version.
 

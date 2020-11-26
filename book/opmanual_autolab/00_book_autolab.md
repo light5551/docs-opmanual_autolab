@@ -1,12 +1,6 @@
 # The Autolab {#book:book status=ready}
 
-<div class='requirements' markdown="1">
-
-Requires: A fully operational [Duckietown](+opmanual_duckietown#book).
-
-Results: A working Autolab.
-
-</div>
+This book describes how to set up your own Autolab and run the localization system.
 
 Warning: this book is under complete review, only use if you are currently involved with Autolab development or AIDO.
 
@@ -35,9 +29,9 @@ In each of the following sections you will find the BUILD, the DEMO and the SW p
 
 - [](#autolab-definition) : The precise definition of an Autolab
 - [](#autobot-specs) : The set of instructions to setup your fleet of dedicated Duckiebots
-- [](#apriltag-specs) : The set of instructions to upgrade your city layout to that of an Autolab
+- [](#apriltag-specs) : The set of instructions to upgrade your city layout to an Autolab
 - [](#autolab-map) : The set of instructions to create a precise virtual map of your Autolab
 - [](#autolab-town) : The set of instructions to set up your central Duckietown device
 - [](#watchtower-hardware) : The set of instructions explaining the set-up of the watchtower devices
 - [](#autolab-localization) : The set of instructions to set up and operate the localization system
-- [](#autolab-operation-manual) : The control interface for operating the Autolab and AIDO submissions
+- [](#autolab-operation-manual) : The control interface for operating the Autolab and running AIDO submissions

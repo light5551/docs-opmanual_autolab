@@ -26,10 +26,10 @@ The Duckietown or town used in the Autolab is a Raspberry Pi 4 without any actua
 
 * hostname: `duckietownXX` (with XX starting from 01)
 
-Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` shell version.
-
 A complete command will look like:
 
     laptop $ dts init_sd_card --hostname duckietown![XX] --country ![COUNTRY] --type duckietown
 
-Using the above naming conventions, you can flash your SD cards as is described in [Duckiebot Initialization](+opmanual_duckiebot#setup-duckiebot). Once the device is flashed, you can opt to either power it using Power over Ethernet (PoE) or directly plug it into a battery.
+Note: Do **not** change the linux-username and password, the flashing procedure using `dts` will give it the default login credentials found [here](+opmanual_duckiebot#setup-duckiebot). Also make sure you are using the `daffy` shell version.
+
+Using the above naming conventions, you can flash your SD cards as is described in [Duckiebot Initialization](+opmanual_duckiebot#setup-duckiebot). Once the device is flashed, you can opt to either power it using Power over Ethernet (PoE) or directly plug it into a battery if you choose a wireless communication network.
