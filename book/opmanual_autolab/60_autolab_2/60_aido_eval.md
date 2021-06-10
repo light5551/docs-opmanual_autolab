@@ -1,4 +1,4 @@
-# AIDO Evaluations in The Autolab {#autolab-2-aido-eval status=draft}
+# Operation: AIDO Evaluations {#autolab-2-aido-eval status=draft}
 
 <div class='requirements' markdown="1">
 
