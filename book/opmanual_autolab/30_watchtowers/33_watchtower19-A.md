@@ -1,4 +1,4 @@
-# BUILDING - Watchtower in WT19-A configuration {#watchtower-hardware-assembly-WT19-A status=ready}
+# Assembling the watchtower (WT19-A) {#watchtower-hardware-assembly-WT19-A status=ready}
 
 <div class='requirements' markdown="1">
 
@@ -158,4 +158,4 @@ The final result should look like [](#fig:WT19-A_final).
 </div>
 
 
-Note: If you were directed here because you are building a traffic light, you will need to jump back to the instructions [here](+opmanual_duckietown#traffic-light-assembly) to finish the assembly.
+Note: If you were directed here because you want to build a traffic light, you will need to jump the page [here](#watchtower-hardware-assembly-WT19-B) to see how a traffic light is built, combined with a watchtower in configuration WT-19B.
